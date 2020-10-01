@@ -1,0 +1,112 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+c o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Aborting connect, error determining connect sequence.
+; Evaluating file: core.clj
+#'yaukanren.core/-main
+clj::yaukanren.core=>
+clj::yaukanren.core=>
+(walk (lvar 0) svars)
+()
+clj::yaukanren.core=>
+svars
+[[0] [1] [1] "banana"]
+clj::yaukanren.core=>
+; Evaluating file: core.clj
+#'yaukanren.core/-main
+clj::yaukanren.core=>
+clj::yaukanren.core=>
+svars
+[[0] [1] [1] "banana"]
+clj::yaukanren.core=>
+clj::yaukanren.core=>
+
+svars
+[[0] [1] [1] "banana"]
+clj::yaukanren.core=>
+(* 1 2)
+2
+clj::yaukanren.core=>
+clj::yaukanren.core=>
+(walk (lvar 0) svars)
+[[0] [1] [1] "banana"]
+clj::yaukanren.core=>
+clj::yaukanren.
+; Evaluating file: core.clj
+#'yaukanren.core/-main
+clj::yaukanren.core=> (walk "banana" svars)
+"banana"
+clj::yaukanren.core=> (walk "doohoo" svars)
+"doohoo"
+clj::yaukanren.core=>
+(walk (lvar 1) svars)
+1
+clj::yaukanren.core=>
+(def doohoo [[lvar 1] "banana"])
+#'yaukanren.core/doohoo
+clj::yaukanren.core=>
+(walk (lvar 1) "banana")
+()
+c(])
+; Syntax error compiling at (output.calva-repl:1:8113).
+; Unable to resolve symbol: c in this context
+[{:file "Compiler.java" :line 6808 :method "analyze" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 6745 :method "analyze" :flags [:dup :tooling :java]}
+ {:file "Compiler.java" :line 7180 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7131 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:414" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:414" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:435" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:435" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:345" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::yaukanren.core=> 
+(rest [1,2])
+2
+clj::yaukanren.core=> (cons 1 2)
+; Evaluating file: core.clj
+; Syntax error macroexpanding clojure.core/defn at (core.clj:22:1).
+; () - failed: Insufficient input at: [:fn-tail] spec: :clojure.core.specs.alpha/defn-args
+; Evaluation of file core.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (IllegalArgumentException) at yaukanren.core/eval28146 (form-init15743165668484387653.clj:79).
+; Don't know how to create ISeq from: java.lang.Long
+[{:file "RT.java" :line 553 :method "seqFrom" :flags [:java]}
+ {:file "RT.java" :line 533 :method "seq" :flags [:java]}
+ {:file "RT.java" :line 683 :method "cons" :flags [:java]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:29" :fn "cons"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:29" :fn "cons"  :method "invoke" :flags [:dup :clj]}
+ {:file "file:/home/joe/yaukanren/yaukanren/src/yaukanren/core.clj:79" :fn "eval28146"  :method "invokeStatic" :flags [:project :repl :clj]}
+ {:file "file:/home/joe/yaukanren/yaukanren/src/yaukanren/core.clj:79" :fn "eval28146"  :method "invoke" :flags [:dup :project :repl :clj]}
+ {:file "Compiler.java" :line 7176 :method "eval" :flags [:tooling :java]}
+ {:file "Compiler.java" :line 7131 :method "eval" :flags [:dup :tooling :java]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:3214" :fn "eval"  :method "invokeStatic" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/core.clj:3210" :fn "eval"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:414" :fn "repl/read-eval-print/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:414" :fn "repl/read-eval-print"  :method "invoke" :flags [:dup :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:435" :fn "repl/fn"  :method "invoke" :flags [:clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:435" :fn "repl"  :method "invokeStatic" :flags [:dup :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/org/clojure/clojure/1.10.0/clojure-1.10.0.jar!/clojure/main.clj:345" :fn "repl"  :method "doInvoke" :flags [:clj]}
+ {:file "RestFn.java" :line 1523 :method "invoke" :flags [:java]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:79" :fn "evaluate"  :method "invokeStatic" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:55" :fn "evaluate"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/interruptible_eval.clj:142" :fn "interruptible-eval/fn/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:171" :fn "session-exec/main-loop/fn"  :method "invoke" :flags [:tooling :clj]}
+ {:file "jar:file:/home/joe/.m2/repository/nrepl/nrepl/0.6.0/nrepl-0.6.0.jar!/nrepl/middleware/session.clj:170" :fn "session-exec/main-loop"  :method "invoke" :flags [:tooling :clj]}
+ {:file "AFn.java" :line 22 :method "run" :flags [:java]}
+ {:file "Thread.java" :line 834 :method "run" :flags [:java]}]
+clj::yaukanren.core=> (re)
+; nREPL Connection was closed
