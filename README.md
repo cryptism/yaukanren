@@ -2,7 +2,7 @@
 
 Just to dust off some sexp cobwebs.
 
-[http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf](Paper)
+[Paper](http://webyrd.net/scheme-2013/papers/HemannMuKanren2013.pdf)
 
 ## TODO
 
